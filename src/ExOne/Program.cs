@@ -5,7 +5,7 @@ namespace ExOne
     class Program
     {
 
-        static Group group = new Group();
+        // static Group group = new Group();
         static void Main(string[] args)
         {
            
@@ -72,7 +72,7 @@ namespace ExOne
                }
            }
 
-            static void CheckAgeAndPrintGroupTicketPrice()
+             static void CheckAgeAndPrintGroupTicketPrice()
            {
              
                 Console.WriteLine("Enter Ages for all members of your group:");
@@ -80,45 +80,57 @@ namespace ExOne
 
                 string input = Console.ReadLine();
                 int age;
+                int total = 0;
                
                 var isNumeric = int.TryParse(input, out age);
                 if(input == "Q")
                 {
                      MainMenu();
+                     UserAction();
+                    
+                  
                    
                 } else if(!isNumeric)
                 {
-                    Console.WriteLine("Please enter a valid number!");
+                     Console.WriteLine("Please enter a valid number!");
+                     
                 } else
                  {
-                    //   Console.WriteLine("Enter Ages for all members of your group:");
-                    //   Console.WriteLine("Press 'Q' when you are done");
-                      
+                     CheckAgeAndPrintGroupTicketPrice();
+                    
                      do {
-                         group.AddAge(age);
-                        CheckAgeAndPrintGroupTicketPrice();
-                     } while(isNumeric);
-                     
+                         
+                     if(age <= 0)
+                         {
+                             Console.WriteLine("Please enter a valid age!"); 
+                            
+                         } else if( age < 20)
+                         {
+                             total += 80;
+                            
+                         }else if (age >=20 && age < 64)
+                         {
+                              total+= 120;
+                             
+                         }else if (age > 63)
+                         {
+                              total+= 90;
+                             
+                             
+                         }
+                         
+
+                         }while(isNumeric);
+                       
+                      Console.WriteLine($"Group total payment is {total}");
+                 } 
+                 
+                    
                       
                 }
-                
-                GroupAges[] ages = group.GetAges();
-                // int total = 0;
-               
-                // foreach(GroupAges age in ages)
-                // {
-                //     if(age > 63)
-                //     {
-                //         total+= 90;
-                //     } else if(age > 0 && age < 20 )
-                //     {
-
-                //     }
-                  
 
            }
             
-           
+          
         }
     }
-}

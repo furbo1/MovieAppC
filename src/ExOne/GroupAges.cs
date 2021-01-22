@@ -1,18 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
+// using System;
+// using System.Collections.Generic;
+// using System.Text;
 
-namespace ExOne 
-{
-    public class GroupAges 
-    {
-        public int Age {get;}
+// namespace ExOne 
+// {
+//     public class GroupAges 
+//     {
+//         public int Age {get;}
 
-    public GroupAges(int age)
-    {
-        Age = age;
-    }
-    }
+//     public GroupAges(int age)
+//     {
+//         Age = age;
+//     }
+//     }
 
     
-}
+// }
