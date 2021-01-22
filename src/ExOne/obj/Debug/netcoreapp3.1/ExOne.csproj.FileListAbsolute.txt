@@ -1,0 +1,11 @@
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\bin\Debug\netcoreapp3.1\ExOne.exe
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\bin\Debug\netcoreapp3.1\ExOne.deps.json
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\bin\Debug\netcoreapp3.1\ExOne.runtimeconfig.json
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\bin\Debug\netcoreapp3.1\ExOne.runtimeconfig.dev.json
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\bin\Debug\netcoreapp3.1\ExOne.dll
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\bin\Debug\netcoreapp3.1\ExOne.pdb
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\obj\Debug\netcoreapp3.1\ExOne.csprojAssemblyReference.cache
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\obj\Debug\netcoreapp3.1\ExOne.AssemblyInfoInputs.cache
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\obj\Debug\netcoreapp3.1\ExOne.AssemblyInfo.cs
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\obj\Debug\netcoreapp3.1\ExOne.dll
+C:\Users\Elev\LexiconAlex\exone\src\ExOne\obj\Debug\netcoreapp3.1\ExOne.pdb
