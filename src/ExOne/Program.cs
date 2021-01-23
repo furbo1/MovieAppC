@@ -52,7 +52,7 @@ namespace ExOne
            {
                string input = Console.ReadLine();
                int age = Int32.Parse(input);
-                if (age <= 0 )
+                if (age <= 0 || age > 120)
                {
                    Console.WriteLine("Enter a valid age \n");
 
@@ -80,27 +80,40 @@ namespace ExOne
 
                 string input = Console.ReadLine();
                 int age;
-                int total = 0;
+               
                
                 var isNumeric = int.TryParse(input, out age);
                 if(input == "Q")
                 {
-                     MainMenu();
+                      Console.WriteLine($"Group total payment is {CalculatePrice(age)}");
+                      MainMenu();
                      UserAction();
                     
-                  
-                   
-                } else if(!isNumeric)
+                } else if(!isNumeric || age <= 0 || age > 120)
                 {
                      Console.WriteLine("Please enter a valid number!");
+                     CheckAgeAndPrintGroupTicketPrice();
                      
                 } else
                  {
                      CheckAgeAndPrintGroupTicketPrice();
                     
                      do {
-                         
-                     if(age <= 0)
+                        CalculatePrice(age);
+                        
+                      }while(isNumeric);
+                 } 
+                 
+                    
+                      
+                }
+
+           }
+
+           static int CalculatePrice(int age)
+            {
+                 int total = 0;
+                 if(age <= 0)
                          {
                              Console.WriteLine("Please enter a valid age!"); 
                             
@@ -114,23 +127,15 @@ namespace ExOne
                              
                          }else if (age > 63)
                          {
-                              total+= 90;
-                             
+                              total+= 90;   
                              
                          }
                          
 
-                         }while(isNumeric);
-                       
-                      Console.WriteLine($"Group total payment is {total}");
-                 } 
-                 
-                    
-                      
-                }
+                        
 
-           }
-            
+                         return total;
+            }            
           
         }
     }
